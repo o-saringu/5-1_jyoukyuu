@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第5章反応　STEP1-上級問題</title>
+	<link rel = "stylesheet" href="website.css">
+</head>
+
+<body>
+	<div class = "title">
+	<h1 class = "daimei">プログラム復習コンテンツ</h1>
+	<div class="home"></div>
+	</div>
+
+	<h1 class = "daimei2">第5章反応　STEP1-上級問題</h1>
+
+	<div class = "yokonarabi">
+	<div class = "mondai">
+	<p class="midasi1">問題のコード</p>
+	<img src="5syou_1_jyoukyuu_mondai.png">
+	</div>
+
+	<div class = "gamen">
+	<p class="midasi2">プログラム実行画面</p>
+	<div class = "video">
+	<video controls muted autoplay loop src="5syou_1_jyoukyuu_kekka.mp4"></video>
+	</div>
+	</div>
+	</div>
+
+	<p class="midasi3">問題文</p>
+	<div class = "mondaibun">
+	<p>上図はマウスを追跡して,マウスのスピードによって太さが変わる線を描くプログラムです.</p>
+	<p>(1)プログラムが動き始めたときに１回だけ実行されるように,プログラムを埋めてください.</p>
+	<p>(2)プログラムが止まるまで繰り返し実行されるように,プログラムを埋めてください.</p>
+	<p>(3)targetXを浮動小数点数として宣言し,値（mouseのX座標）を割り当ててください.</p>
+	<p>(4)targetYを浮動小数点として宣言し,値（mouseのy座標）を割り当ててください.</p>
+	<p>(5)weightを浮動小数点として宣言し,値（2点間の距離）を割り当ててください.</p>
+	<p>　  ここで２点間の距離は点(x, y)と点(px, py)との距離です.</p>
+	<p>(6)線の太さを変数weightとしてください.</p>
+	
+	<input type="checkbox" id="check1">
+	<label class="check1" for="check1">ヒント</label>
+	<div class = "hinto">
+	<p>(5)点(a, b)と点(c, d)の2点間の距離はdist(a, b, c, d);で求められる.</p>
+	<p>(6)線の太さを変える関数の値をweightとする.</p>
+
+	</div>
+	</div>
+	
+	<p class="midasi4">解答欄</p>
+	<div class = "kaitouran">
+	<p>
+	<label>(1)<input type="text" id="one" size="80" placeholder="解答を入力"></label>
+	<p id = "text1"></p>
+	</p>
+
+
+	<p>
+	<label>(2)<input type="text" id="two" size="80" placeholder="解答を入力"</label>
+	<p id = "text2"></p>
+	</p>
+
+	<p>
+	<label>(3)<input type="text" id="three" size="80" placeholder="解答を入力"</label>
+	<p id = "text3"></p>
+	</p>
+
+	<p>
+	<label>(4)<input type="text" id="four" size="80" placeholder="解答を入力"</label>
+	<p id = "text4"></p>
+	</p>
+
+	<label>(5)<input type="text" id="five" size="80" placeholder="解答を入力"</label>
+	<p id = "text5"></p>
+	</p>
+
+	<label>(6)<input type="text" id="six" size="80" placeholder="解答を入力"</label>
+	<p id = "text6"></p>
+	</p>
+
+
+
+	<p>(1)void setup()</p>
+	<p>(2)void draw()</p>
+	<p>(3)float targetX = mouseX;</p>
+	<p>(4)float targetY = mouseY;</p>
+	<p>(5)float weight = dist(x, y, px, py);</p>
+	<p>(6)strokeWeight(weight);</p>
+	
+	<input type="button" id="btn" value="判定">
+	
+	
+	</div>
+	<script src = "main.js"></script>	
+</body>
+
+</html>
